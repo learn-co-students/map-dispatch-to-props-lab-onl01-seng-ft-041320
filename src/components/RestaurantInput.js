@@ -23,7 +23,6 @@ export class RestaurantInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    debugger;
     this.props.addRestaurant();
   }
 
@@ -52,10 +51,12 @@ export class RestaurantInput extends Component {
 
 const mapDispatchToProps = dispatch => {
   debugger;
+  console.log(this)
   return {
     addRestaurant: () => {
       dispatch(addRestaurant())
     }
+    
   };
 };
 
